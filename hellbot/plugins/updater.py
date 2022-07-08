@@ -219,7 +219,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
 @hell_cmd(pattern="update build$")
 async def upstream(event):
     event = await eor(event, "`Hard-Update In Progress... \nPlease wait until docker build is finished...`")
-    off_repo = "https://github.com/MeAbhish3k/waruserbot"
+    off_repo = "https://github.com/waruserbot/Plugins"
     os.chdir("/app")
     git_hell = f"rm -rf .git"
     try:
