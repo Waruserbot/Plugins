@@ -113,7 +113,7 @@ async def kang(event):
                 pack = 1
                 emoji = splat[1]
 
-        packname = f"Hellbot_{un_}_{pack}"
+        packname = f"waruserbot_{un_}_{pack}"
         packnick = f"{hellbot}" if hellbot else f"{un}'s WarUserBot Vol.{pack}"
         cmd = "/newpack"
         file = io.BytesIO()
@@ -147,7 +147,7 @@ async def kang(event):
                     x = await conv.get_response()
                     while "120" in x.text:
                         pack += 1
-                        packname = f"Hellbot_{un_}_{pack}"
+                        packname = f"waruserbot_{un_}_{pack}"
                         packnick = f"{hellbot}" if hellbot else f"{un}'s WarUserBot Vol.{pack}"
                         cmd = "/newpack"
                         await hell.edit(f"`Switching to Pack {str(pack)} due to insufficient space`")
@@ -191,8 +191,8 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 if is_anim:
-                    packname = f"Hellbot_{un_}_{pack}_anim"
-                    packnick = f"{hellbot}" if hellbot else f"{un}'s Hêllẞø† Vol.{pack} (Animated)"
+                    packname = f"waruserbot_{un_}_{pack}_anim"
+                    packnick = f"{hellbot}" if hellbot else f"{un}'s waruserbot Vol.{pack} (Animated)"
                     cmd = "/newanimated"
                     await conv.send_message("/addsticker")
                     await conv.get_response()
@@ -244,8 +244,8 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 elif is_vid:
-                    packname = f"Hellbot_{un_}_{pack}_vid"
-                    packnick = f"{hellbot}" if hellbot else f"{un}'s Hêllẞø† (Video)"
+                    packname = f"waruserbot_{un_}_{pack}_vid"
+                    packnick = f"{hellbot}" if hellbot else f"{un}'s waruserbot (Video)"
                     cmd = "/newvideo"
                     await conv.send_message("/addsticker")
                     await conv.get_response()
@@ -272,8 +272,8 @@ async def kang(event):
             await hell.edit("`Preparing a new pack....`")
             async with event.client.conversation("Stickers") as conv:
                 if not is_anim and not is_vid:
-                    packname = f"Hellbot_{un_}_{pack}"
-                    packnick = f"{hellbot}" if hellbot else f"{un}'s Hêllẞø† Vol.{pack}"
+                    packname = f"waruserbot_{un_}_{pack}"
+                    packnick = f"{hellbot}" if hellbot else f"{un}'s waruserbot Vol.{pack}"
                     cmd = "/newpack"
                     await conv.send_message(cmd)
                     await conv.get_response()
@@ -300,7 +300,7 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
             
                 if is_anim:
-                    packname = f"Hellbot_{un_}_{pack}_anim"
+                    packname = f"waruserbot_{un_}_{pack}_anim"
                     packnick = f"{hellbot}" if hellbot else f"{un}'s WarUserBot Vol.{pack} (Animated)"
                     cmd = "/newanimated"
                     await conv.send_message(cmd)
@@ -331,7 +331,7 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 if is_vid:
-                    packname = f"Hellbot_{un_}_{pack}_vid"
+                    packname = f"waruserbot_{un_}_{pack}_vid"
                     packnick = f"{hellbot}" if hellbot else f"{un}'s WarUserBot (Video)"
                     cmd = "/newvideo"
                     await conv.send_message(cmd)
