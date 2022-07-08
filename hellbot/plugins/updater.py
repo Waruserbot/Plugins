@@ -23,7 +23,7 @@ NO_HEROKU_APP_CFGD = "No Heroku App Found!"
 HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
 RESTARTING_APP = "Restarting Heroku App..."
 IS_SELECTED_DIFFERENT_BRANCH = "Looks like a custom branch {branch_name} is being used!\nIn this case, updater is unable to identify the branch to be updated. Please check out to an official branch, and re-start the updater."
-hellbot_info = "https://raw.githubusercontent.com/Mrabhish3k/Plugins/master/waruserbot-info.json"
+hellbot_info = "https://raw.githubusercontent.com/Meabhish3k/Plugins/master/waruserbot-info.json"
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 requirements_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "requirements.txt")
 
@@ -219,7 +219,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
 @hell_cmd(pattern="update build$")
 async def upstream(event):
     event = await eor(event, "`Hard-Update In Progress... \nPlease wait until docker build is finished...`")
-    off_repo = "https://github.com/MrAbhish3k/waruserbot"
+    off_repo = "https://github.com/MeAbhish3k/waruserbot"
     os.chdir("/app")
     git_hell = f"rm -rf .git"
     try:
