@@ -5,7 +5,7 @@ from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from . import *
 
 
-@hell_cmd(pattern="history(?:\s|$)([\s\S]*)")
+@hell_cmd(pattern="sg(?:\s|$)([\s\S]*)")
 async def _(hellevent):
     if not hellevent.reply_to_msg_id:
        await eod(hellevent, "`Please reply to a user to get his history`")
