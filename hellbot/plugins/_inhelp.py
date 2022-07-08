@@ -244,7 +244,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         custom.Button.url("⚡ GROUP ⚡", "https://t.me/waruserbotsupport"),
                     ],
                     [
-                        custom.Button.url("✨ REPO ✨", "https://github.com/MrAbhish3k/waruserbot"),
+                        custom.Button.url("✨ REPO ✨", "https://github.com/MeAbhish3k/waruserbot"),
                         custom.Button.url("🔰 TUTORIAL 🔰", "https://t.me/waruserbot"),
                     ],
                 ],
