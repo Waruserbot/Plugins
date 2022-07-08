@@ -114,7 +114,7 @@ async def kang(event):
                 emoji = splat[1]
 
         packname = f"Hellbot_{un_}_{pack}"
-        packnick = f"{hellbot}" if hellbot else f"{un}'s Hêllẞø† Vol.{pack}"
+        packnick = f"{hellbot}" if hellbot else f"{un}'s WarUserBot Vol.{pack}"
         cmd = "/newpack"
         file = io.BytesIO()
 
@@ -148,7 +148,7 @@ async def kang(event):
                     while "120" in x.text:
                         pack += 1
                         packname = f"Hellbot_{un_}_{pack}"
-                        packnick = f"{hellbot}" if hellbot else f"{un}'s Hêllẞø† Vol.{pack}"
+                        packnick = f"{hellbot}" if hellbot else f"{un}'s WarUserBot Vol.{pack}"
                         cmd = "/newpack"
                         await hell.edit(f"`Switching to Pack {str(pack)} due to insufficient space`")
                         await conv.send_message(packname)
@@ -301,7 +301,7 @@ async def kang(event):
             
                 if is_anim:
                     packname = f"Hellbot_{un_}_{pack}_anim"
-                    packnick = f"{hellbot}" if hellbot else f"{un}'s Hêllẞø† Vol.{pack} (Animated)"
+                    packnick = f"{hellbot}" if hellbot else f"{un}'s WarUserBot Vol.{pack} (Animated)"
                     cmd = "/newanimated"
                     await conv.send_message(cmd)
                     await conv.get_response()
@@ -332,7 +332,7 @@ async def kang(event):
 
                 if is_vid:
                     packname = f"Hellbot_{un_}_{pack}_vid"
-                    packnick = f"{hellbot}" if hellbot else f"{un}'s Hêllẞø† (Video)"
+                    packnick = f"{hellbot}" if hellbot else f"{un}'s WarUserBot (Video)"
                     cmd = "/newvideo"
                     await conv.send_message(cmd)
                     await conv.get_response()
@@ -505,7 +505,7 @@ async def _(event):
     if not rply:
         return await eod(hel_, "`Reply to a stciker to kang that pack.`")
     if hell == "":
-        pname = f"{un}'s Hêllẞø† Pack"
+        pname = f"{un}'s WarUserBot Pack"
     else:
         pname = hell
     if rply and rply.media and rply.media.document.mime_type == "image/webp":
@@ -594,7 +594,7 @@ async def sticklet(event):
     )
 
     image_stream = io.BytesIO()
-    image_stream.name = "Hellbot.webp"
+    image_stream.name = "WarUserBot.webp"
     image.save(image_stream, "WebP")
     image_stream.seek(0)
 
