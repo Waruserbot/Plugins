@@ -36,7 +36,7 @@ USER_BOT_WARN_ZERO = "Enough Of Your Flooding In My Master's PM!! \n\n**🚫 Blo
 alive_txt = """{}\n
 <b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
 <b>Telethon ≈</b>  <i>{}</i>
-<b>Hêllẞø† ≈</b>  <i>{}</i>
+<b>WarUserBot ≈</b>  <i>{}</i>
 <b>Uptime ≈</b>  <i>{}</i>
 <b>Abuse ≈</b>  <i>{}</i>
 <b>Sudo ≈</b>  <i>{}</i>
