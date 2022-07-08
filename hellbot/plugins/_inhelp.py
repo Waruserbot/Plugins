@@ -220,7 +220,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 title="Repository",
                 text=f"**⚡Legendary Af Waruserbot⚡**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://github.com/MrAbhish3k/waruserbot")],
+                    [Button.url("📑 Repo 📑", "https://github.com/MeAbhish3k/waruserbot")],
                     [Button.url("waruserbot", "https://t.me/waruserbot")],
                 ],
             )
