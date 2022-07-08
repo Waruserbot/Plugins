@@ -1,6 +1,6 @@
 FROM teamvaders/hellbot:latest
 
-RUN git clone https://github.com/HellBoy-OP/Plugins.git /root/hellbot
+RUN git clone https://github.com/waruserbot/Plugins.git /root/hellbot
 
 WORKDIR /root/hellbot
 
