@@ -58,7 +58,7 @@ async def up(event):
 
 
 
-@hell_cmd(pattern="hell$")
+@hell_cmd(pattern="war$")
 async def hell_a(event):
     cid = await client_id(event)
     ForGo10God, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
