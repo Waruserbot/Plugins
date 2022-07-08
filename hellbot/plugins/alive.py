@@ -11,22 +11,22 @@ from . import *
 #-------------------------------------------------------------------------------
 
 ALIVE_TEMP = """
-<b><i>🔥🔥ɦɛʟʟɮօt ɨs օռʟɨռɛ🔥🔥</b></i>
+<b><i>🔥🔥waruserbot is online🔥🔥</b></i>
 <i><b>↼ Øwñêr ⇀</i></b> : 『 <a href='tg://user?id={}'>{}</a> 』
 ╭──────────────
 ┣─ <b>» Telethon ~</b> <i>{}</i>
-┣─ <b>» Hêllẞø† ~</b> <i>{}</i>
+┣─ <b>» Waruserbot ~</b> <i>{}</i>
 ┣─ <b>» Sudo ~</b> <i>{}</i>
 ┣─ <b>» Uptime ~</b> <i>{}</i>
 ┣─ <b>» Ping ~</b> <i>{}</i>
 ╰──────────────
-<b><i>»»» <a href='https://t.me/its_hellbot'>[ †hê Hêllẞø† ]</a> «««</i></b>
+<b><i>»»» <a href='https://t.me/waruserbot'>[ 𝘄𝗮𝗿𝘂𝘀𝗲𝗿𝗯𝗼𝘁 ]</a> «««</i></b>
 """
 
 msg = """{}\n
 <b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
 <b>Telethon ≈</b>  <i>{}</i>
-<b>Hêllẞø† ≈</b>  <i>{}</i>
+<b>Waruserbot ≈</b>  <i>{}</i>
 <b>Uptime ≈</b>  <i>{}</i>
 <b>Abuse ≈</b>  <i>{}</i>
 <b>Sudo ≈</b>  <i>{}</i>
@@ -49,7 +49,7 @@ async def up(event):
                 pic_list.append(c)
         PIC = random.choice(pic_list)
     else:
-        PIC = "https://telegra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+        PIC = "https://telegra.ph/file/9cd450f3d28848ae12026.jpg"
     end = datetime.datetime.now()
     ling = (end - start).microseconds / 1000
     omk = ALIVE_TEMP.format(ForGo10God, HELL_USER, tel_ver, hell_ver, is_sudo, uptime, ling)
@@ -63,7 +63,7 @@ async def hell_a(event):
     cid = await client_id(event)
     ForGo10God, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
     uptime = await get_time((time.time() - StartTime))
-    am = gvarstat("ALIVE_MSG") or "<b>»» нєℓℓвσт ιѕ σиℓιиє ««</b>"
+    am = gvarstat("ALIVE_MSG") or "<b>»» 𝘄𝗮𝗿𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗶𝘀 𝗼𝗻𝗹𝗶𝗻𝗲 ««</b>"
     try:
         hell = await event.client.inline_query(Config.BOT_USERNAME, "alive")
         await hell[0].click(event.chat_id)
