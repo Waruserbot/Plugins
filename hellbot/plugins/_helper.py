@@ -9,7 +9,7 @@ from . import *
 
 msg = f"""
 **⚡ Legendary Af waruserbot ⚡**
-  •        [📑 Repo 📑](https://github.com/MrAbhish3k/waruserbot)
+  •        [📑 Repo 📑](https://github.com/MeAbhish3k/waruserbot)
   •        [Waruserbot Support](https://t.me/waruserbotsupport)
   •  ©️ {hell_channel} ™
 """
