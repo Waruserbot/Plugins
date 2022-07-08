@@ -14,7 +14,7 @@ from hellbot.version import __hell__ as hellver
 
 hl = Config.HANDLER
 
-HELL_PIC = "https://telegra.ph/file/cb0bd62632a3a2b6b2726.jpg"
+HELL_PIC = "https://telegra.ph/file/44edfd6fa6faaf5284264.jpg"
 
 
 # Client Starter
@@ -74,8 +74,8 @@ async def start_hellbot():
         LOGS.info("••• Starting to load Plugins •••")
         await plug_load("hellbot/plugins/*.py")
         await plug_channel(bot, Config.PLUGIN_CHANNEL)
-        LOGS.info("⚡ Your HellBot Is Now Working ⚡")
-        LOGS.info("Head to @Its_HellBot for Updates. Also join chat group to get help regarding to HellBot.")
+        LOGS.info("⚡ Your Waruserbot Is Now Working ⚡")
+        LOGS.info("Head to @waruserBot for Updates. Also join @waruserbotsupport chat group to get help regarding to waruserbot.")
         LOGS.info(f"» Total Clients = {str(total)} «")
         await hell_is_on(total)
     except Exception as e:
@@ -91,7 +91,4 @@ else:
     try:
         bot.run_until_disconnected()
     except ConnectionError:
-        pass
-
-
-# hellbot
+        pas
