@@ -98,7 +98,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://telegra.ph/file/3a48c5756d2a9763eafaf.jpg"
+                help_pic = "https://telegra.ph/file/44edfd6fa6faaf5284264.jpg"
             help_msg = f"🔰 **{hell_mention}**\n\n📜 __No.of Plugins__ : `{len(CMD_HELP)}` \n🗂️ __Commands__ : `{len(apn)}`\n🗒️ __Page__ : 1/{veriler[0]}"
             if help_pic == "DISABLE":
                 result = builder.article(
@@ -124,7 +124,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 )
         elif event.query.user_id in auth and query == "alive":
             uptime = await get_time((time.time() - StartTime))
-            alv_msg = gvarstat("ALIVE_MSG") or "»»» <b>нєℓℓвσт ιѕ σиℓιиє</b> «««"
+            alv_msg = gvarstat("ALIVE_MSG") or "»»» <b>waruserbot is online</b> «««"
             he_ll = alive_txt.format(alv_msg, tel_ver, hell_ver, uptime, abuse_m, is_sudo)
             alv_btn = [
                 [Button.url(f"{HELL_USER}", f"tg://openmessage?user_id={ForGo10God}")],
@@ -140,7 +140,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://telegra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+                PIC = "https://telegra.ph/file/44edfd6fa6faaf5284264.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     PIC,
@@ -153,7 +153,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     PIC,
                     text=he_ll,
-                    title="HellBot Alive",
+                    title="Warbot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                     parse_mode="HTML",
@@ -161,7 +161,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             else:
                 result = builder.article(
                     text=he_ll,
-                    title="HellBot Alive",
+                    title="WarBot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                     parse_mode="HTML",
@@ -169,7 +169,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
 
         elif event.query.user_id in auth and query == "pm_warn":
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or "**You Have Trespassed To My Master's PM!\nThis Is Illegal And Regarded As Crime.**"
-            HELL_FIRST = "**🔥 Hêllẞø† Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nHello!! Welcome to {}'s PM. This is an automated message.\n\n{}".format(hell_mention, CSTM_PMP)
+            HELL_FIRST = "**🔥 waruserbot Private Security Protocol 🔥**\n\nHello!! Welcome to {}'s PM. This is an automated message.\n\n{}".format(hell_mention, CSTM_PMP)
             a = gvarstat("PMPERMIT_PIC")
             pic_list = []
             if a:
@@ -179,7 +179,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://telegra.ph/file/58df4d86400922aa32acd.jpg"
+                PIC = "https://telegra.ph/file/44edfd6fa6faaf5284264.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     file=PIC,
@@ -218,10 +218,10 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id in auth and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**",
+                text=f"**⚡Legendary Af Waruserbot⚡**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://github.com/The-HellBot/HellBot")],
-                    [Button.url("HellBot Netwprk", "https://t.me/hellbot_network")],
+                    [Button.url("📑 Repo 📑", "https://github.com/MrAbhish3k/waruserbot")],
+                    [Button.url("waruserbot", "https://t.me/waruserbot")],
                 ],
             )
 
@@ -236,16 +236,16 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
 
         else:
             result = builder.article(
-                "@Its_HellBot",
-                text="""**Hey! This is [Hêllẞø†](https://t.me/its_hellbot) \nYou can know more about me from the links given below 👇**""",
+                "@waruserbot",
+                text="""**Hey! This is [WarUserBot](https://t.me/waruserbot) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Its_HellBot"),
-                        custom.Button.url("⚡ GROUP ⚡", "https://t.me/hellbot_chat"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/waruserBot"),
+                        custom.Button.url("⚡ GROUP ⚡", "https://t.me/waruserbotsupport"),
                     ],
                     [
-                        custom.Button.url("✨ REPO ✨", "https://github.com/The-HellBot/HellBot"),
-                        custom.Button.url("🔰 TUTORIAL 🔰", "https://youtu.be/M2FQJq_sHp4"),
+                        custom.Button.url("✨ REPO ✨", "https://github.com/MrAbhish3k/waruserbot"),
+                        custom.Button.url("🔰 TUTORIAL 🔰", "https://t.me/waruserbot"),
                     ],
                 ],
                 link_preview=False,
@@ -259,7 +259,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         if event.query.user_id in auth:
             reply_pop_up_alert = "This is for Other Users..."
         else:
-            reply_pop_up_alert = "🔰 This is Hêllẞø† PM Security to keep away unwanted retards from spamming PM !!"
+            reply_pop_up_alert = "🔰 This is WarUserBot PM Security to keep away unwanted retards from spamming PM !!"
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -324,9 +324,9 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         auth = await clients_list()
         if event.query.user_id in auth:
             veriler = custom.Button.inline(f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen")
-            await event.edit(f"**⚜️ Hêllẞø† Mêñû Prõvîdêr ìs ñôw Çlösëd ⚜️**\n\n**Bot Of :**  {hell_mention}\n\n        [©️ Hêllẞø† ™️]({chnl_link})", buttons=veriler, link_preview=False)
+            await event.edit(f"**⚜️ WarUserBot Mêñû Prõvîdêr ìs ñôw Çlösëd ⚜️**\n\n**Bot Of :**  {hell_mention}\n\n        [©️ waruserbot™️]({chnl_link})", buttons=veriler, link_preview=False)
         else:
-            reply_pop_up_alert = "You are not authorized to use me! \n© Hêllẞø† ™"
+            reply_pop_up_alert = "You are not authorized to use me! \n© WarUserBot ™"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
    
 
@@ -348,7 +348,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            return await event.answer("You are not authorized to use me! \n© Hêllẞø† ™", cache_time=0, alert=True)
+            return await event.answer("You are not authorized to use me! \n© waruserbot ™", cache_time=0, alert=True)
 
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)")))
@@ -375,7 +375,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            return await event.answer("You are not authorized to use me! \n© Hêllẞø† ™", cache_time=0, alert=True)
+            return await event.answer("You are not authorized to use me! \n© Waruserbot ™", cache_time=0, alert=True)
 
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"commands\[(.*)\[(\d*)\]\]\((.*)\)")))
@@ -419,7 +419,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            return await event.answer("You are not authorized to use me! \n© Hêllẞø† ™", cache_time=0, alert=True)
+            return await event.answer("You are not authorized to use me! \n© Waruserbot ™", cache_time=0, alert=True)
 
 
 # hellbot
