@@ -91,4 +91,4 @@ else:
     try:
         bot.run_until_disconnected()
     except ConnectionError:
-        pas
+        pass
