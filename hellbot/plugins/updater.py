@@ -90,7 +90,7 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await eor(event, "✅ Successfully updated Hêllẞø†!\n\nBot is restarting please wait for a minute.")
+    await eor(event, "✅ Successfully updated WarUserBot!\n\nBot is restarting please wait for a minute.")
     args = [sys.executable, "-m", "hellbot"]
     os.execle(sys.executable, *args, os.environ)
     return
@@ -146,7 +146,7 @@ async def upstream(event):
     hell_mention = cid[2]
     if changelog == "" and not force_update:
         _version, _release, _branch, _author, _auturl = await hell_info(hellbot_info)
-        output_ = f"**Your Bot Version :** `{hell_ver}` \n**Owner :** {hell_mention} \n\n**Official HellBot Version :** `{_version}` \n**Release Date :** `{_release}` \n**Official Repo Branch :** `{_branch}` \n**Update By :** [{_author}]({_auturl})"
+        output_ = f"**Your Bot Version :** `{hell_ver}` \n**Owner :** {hell_mention} \n\n**Official WarUserBot Version :** `{_version}` \n**Release Date :** `{_release}` \n**Official Repo Branch :** `{_branch}` \n**Update By :** [{_author}]({_auturl})"
         if str(_version) not in str(hell_ver):
             output_ += f"\n\n**Do** `{hl}update build` **to update your WarUserBot to latest version.**"
         await event.edit(output_)
@@ -257,11 +257,11 @@ async def upstream(event):
 CmdHelp("update").add_command(
   "update", None, "Checks if any new update is available."
 ).add_command(
-  "update now", None, "Soft-Update Your Hêllẞø†. Basically if you restart dyno it will go back to previous deploy."
+  "update now", None, "Soft-Update Your WarUserBot. Basically if you restart dyno it will go back to previous deploy."
 ).add_command(
-  "update build", None, "Hard-Update Your Hêllẞø†. This won't take you back to your previous deploy. This will be triggered even if there is no changelog."
+  "update build", None, "Hard-Update Your WarUserBot. This won't take you back to your previous deploy. This will be triggered even if there is no changelog."
 ).add_info(
-  "Hêllẞø† Updater."
+  "Waruserbot Updater."
 ).add_warning(
   "✅ Harmless Module."
 ).add()
