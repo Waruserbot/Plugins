@@ -6,7 +6,7 @@ from selenium import webdriver
 
 from . import *
 
-@hell_cmd(pattern="webshot ([\s\S]*)")
+@hell_cmd(pattern="ws ([\s\S]*)")
 async def _(event):
     if Config.GOOGLE_CHROME_BIN is None:
         return await eod(event, "need to install Google Chrome. Module Stopping.")
@@ -58,7 +58,7 @@ async def _(event):
 
 
 CmdHelp("capture").add_command(
-  "screenshot", "<link>", "Gives out the web screenshot of given link via Google Crome Bin in .png format", ".screenshot https://github.com/hellboy-op/hellbot"
+  "screenshot", "<link>", "Gives out the web screenshot of given link via Google Crome Bin in .png format", ".screenshot https://github.com/xabhish3k/waruserbot"
 ).add_command(
   "webshot", "<link>", f"Same as  {hl}screenshot."
 ).add_info(
