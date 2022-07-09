@@ -61,13 +61,13 @@ async def up(event):
 @hell_cmd(pattern="war$")
 async def hell_a(event):
     cid = await client_id(event)
-    ForGo10God, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
+    Xabhish3k, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
     uptime = await get_time((time.time() - StartTime))
     am = gvarstat("ALIVE_MSG") or "<b>»» 𝘄𝗮𝗿𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗶𝘀 𝗼𝗻𝗹𝗶𝗻𝗲 ««</b>"
     try:
         hell = await event.client.inline_query(Config.BOT_USERNAME, "alive")
         await hell[0].click(event.chat_id)
-        if event.sender_id == ForGo10God:
+        if event.sender_id == Xabhish3k:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg.format(am, tel_ver, hell_ver, uptime, abuse_m, is_sudo), parse_mode="HTML")
