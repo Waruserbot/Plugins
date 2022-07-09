@@ -501,11 +501,11 @@ async def _(event):
     bot_un = bot_.replace("@", "")
     user = await event.client.get_me()
     un = f"@{user.username}" if user.username else user.first_name
-    un_ = user.username if user.username else ForGo10God
+    un_ = user.username if user.username else xabhish3k 
     if not rply:
         return await eod(hel_, "`Reply to a stciker to kang that pack.`")
     if hell == "":
-        pname = f"{un}'s WarUserBot Pack"
+        pname = f"{un}'s @stickersbag Pack"
     else:
         pname = hell
     if rply and rply.media and rply.media.document.mime_type == "image/webp":
