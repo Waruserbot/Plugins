@@ -135,8 +135,8 @@ async def apkr(event):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n<b>Download : </b> <a href='https://t.me/joinchat/JCu-H1NikiYDgNjpjPYd4A'>Request_Here</a>"
-        app_details += "\n\n===> @Xpl0iter <==="
+        app_details += "\n\n<b>Download : </b> <a href='https://t.me/+QAsQTAJOc4hlMWZl'>Request_Here</a>"
+        app_details += "\n\n===> @wrrlegend <==="
         await event.edit(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await event.edit("No result found in search. Please enter **Valid app name**")
