@@ -76,7 +76,7 @@ async def hell_a(event):
 CmdHelp("alive").add_command(
   "alive", None, "Shows the Default Alive Message"
 ).add_command(
-  "hell", None, "Shows Inline Alive Menu with more details."
+  "war", None, "Shows Inline Alive Menu with more details."
 ).add_warning(
   "✅ Harmless Module"
 ).add()
