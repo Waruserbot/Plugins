@@ -62,8 +62,8 @@ async def start_hellbot():
         tbot_id = await tbot.get_me()
         Config.BOT_USERNAME = f"@{tbot_id.username}"
         bot.tgbot = tbot
-        LOGS.info("••• Starting HellBot •••")
-        C1 = await hells(Config.HELLBOT_SESSION, bot, "HELLBOT_SESSION")
+        LOGS.info("••• Starting Waruserbot •••")
+        C1 = await hells(Config.STRING_SESSION, bot, "STRING_SESSION")
         C2 = await hells(Config.SESSION_2, H2, "SESSION_2")
         C3 = await hells(Config.SESSION_3, H3, "SESSION_3")
         C4 = await hells(Config.SESSION_4, H4, "SESSION_4")
