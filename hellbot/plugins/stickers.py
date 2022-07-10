@@ -38,9 +38,9 @@ KANGING_STR = [
 @hell_cmd(pattern="kang(?:\s|$)([\s\S]*)")
 async def kang(event):
     user = await event.client.get_me()
-    ForGo10God, HELL_USER, hell_mention = await client_id(event)
+    Xabhish3k, HELL_USER, hell_mention = await client_id(event)
     un = f"@{user.username}" if user.username else HELL_USER
-    un_ = user.username if user.username else ForGo10God
+    un_ = user.username if user.username else Xabhish3k 
     message = await event.get_reply_message()
     hellbot = gvarstat("STICKER_PACKNAME")
     photo = None
