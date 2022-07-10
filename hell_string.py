@@ -6,14 +6,14 @@ from telethon.sessions import StringSession
 from telethon.sync import TelegramClient
 
 
-print("•••   HELLBOT  SESSION  GENERATOR   •••")
-print("\nHello!! Welcome to HellBot Session Generator\n")
+print("•••   WARBOT  SESSION  GENERATOR   •••")
+print("\nHello!! Welcome to WARBot Session Generator\n")
 okvai = input("Enter 69 to continue: ")
 if okvai == "69":
     print("Choose the string session type: \n1. WarBot \n2. Music Bot")
     library = input("\nYour Choice: ")
     if library == "1":
-        print("\nTelethon Session For HellBot")
+        print("\nTelethon Session For WarBot")
         APP_ID = int(input("\nEnter APP ID here: "))
         API_HASH = input("\nEnter API HASH here: ")
         with TelegramClient(StringSession(), APP_ID, API_HASH) as hellbot:
