@@ -249,7 +249,7 @@ async def upstream(event):
     ac_br = repo.active_branch.name
     ups_rem = repo.remote("upstream")
     ups_rem.fetch(ac_br)
-    _version, _release, _branch, _author, _auturl = await hell_info(hellbot_info)
+    _version, _release, _branch, _author, _auturl = await war_info(warbot_info)
     await event.edit(f"<b><i>waruserbot Docker Build In Progress !!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>", link_preview=False, parse_mode="HTML")
     await deploy(event, repo, ups_rem, ac_br, txt)
 
