@@ -136,7 +136,7 @@ async def variable(hell):
             variable = xvar.upper()
             if variable in db_config:
                 return await eod(event, f"This is a SQL based variable. Do `{hl}gvar {variable}` to get variable info.")
-            if variable in ("HELLBOT_SESSION", "BOT_TOKEN", "HEROKU_API_KEY"):
+            if variable in ("STRING_SESSION", "BOT_TOKEN", "HEROKU_API_KEY"):
                 if Config.ABUSE == "ON":
                     await event.client.send_file(hell.chat_id, cjb, caption=cap)
                     await event.delete()
