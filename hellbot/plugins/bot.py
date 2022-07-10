@@ -36,8 +36,8 @@ async def pong(hell):
         PIC = None
     event = await eor(hell, "`·.·★ ℘ıŋɠ ★·.·´")
     cid = await client_id(event)
-    ForGo10God, HELL_USER = cid[0], cid[1]
-    hell_mention = f"<a href='tg://user?id={ForGo10God}'>{HELL_USER}</a>"
+    XabhishEk, HELL_USER = cid[0], cid[1]
+    hell_mention = f"<a href='tg://user?id={XabhishEk}'>{HELL_USER}</a>"
     uptime = await get_time((time.time() - StartTime))
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
