@@ -145,7 +145,7 @@ async def upstream(event):
     cid = await client_id(event)
     hell_mention = cid[2]
     if changelog == "" and not force_update:
-        _version, _release, _branch, _author, _auturl = await hell_info(hellbot_info)
+        _version, _release, _branch, _author, _auturl = await war_info(hellbot_info)
         output_ = f"**Your Bot Version :** `{hell_ver}` \n**Owner :** {hell_mention} \n\n**Official WarUserBot Version :** `{_version}` \n**Release Date :** `{_release}` \n**Official Repo Branch :** `{_branch}` \n**Update By :** [{_author}]({_auturl})"
         if str(_version) not in str(hell_ver):
             output_ += f"\n\n**Do** `{hl}update build` **to update your WarUserBot to latest version.**"
@@ -186,7 +186,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 f"{txt}\n" "`Invalid Heroku vars for updating."
             )
             return repo.__del__()
-        _version, _release, _branch, _author, _auturl = await hell_info(hellbot_info)
+        _version, _release, _branch, _author, _auturl = await war_info(hellbot_info)
         await event.edit(f"<b><i>WarUserBot Docker Build In Progress !!!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>", link_preview=False, parse_mode="HTML")
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
