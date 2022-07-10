@@ -70,7 +70,7 @@ async def start_msg(client, pic, version, total):
         pic,
         caption=text,
         parse_mode="HTML",
-        buttons=[[Button.url("Waruserbot Support", "https://t.me/waruserbotsupport")]],
+        buttons=[[Button.url("The WarBotZ", "https://t.me/Thewarbotz")]],
     )
 
 
