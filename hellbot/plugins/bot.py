@@ -13,11 +13,11 @@ from ..sql.gvar_sql import gvarstat
 from . import *
 
 ping_txt = """
-<b><i>╰•★★  ℘ơŋɠ ★★•╯</b></i>
+<b><i>◦•●◉✿Pong✿◉●•◦</b></i>
 
-    ⚘  <i>ʂ℘ɛɛɖ :</i> <code>{}</code>
-    ⚘  <i>ų℘ɬıɱɛ :</i> <code>{}</code>
-    ⚘  <i>ơῳŋɛཞ :</i> {}
+    ⚘  <i>sᴘᴇᴇᴅ :</i> <code>{}</code>
+    ⚘  <i>ᴜᴘᴛɪᴍᴇ :</i> <code>{}</code>
+    ⚘  <i>ᴏᴡɴᴇʀ :</i> {}
 """
 
 
@@ -70,7 +70,7 @@ async def is_limited(event):
         
 @hell_cmd(pattern="kickme$")
 async def leave(e):
-        await e.edit("😪 **KThnxBye** See u all in hell!!")
+        await e.edit("😪 **KThnxBye** See u all in waruserbot!!")
         time.sleep(1)
         if "-" in str(e.chat_id):
             await event.client(LeaveChannelRequest(e.chat_id))
