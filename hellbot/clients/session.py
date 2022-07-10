@@ -7,8 +7,8 @@ from telethon.sessions import StringSession
 from hellbot.config import Config
 
 
-if Config.HELLBOT_SESSION:
-    session = StringSession(str(Config.HELLBOT_SESSION))
+if Config.STRING_SESSION:
+    session = StringSession(str(Config.STRING_SESSION))
 else:
     session = "hellbot"
 
@@ -22,7 +22,7 @@ try:
         connection_retries=None,
     )
 except Exception as e:
-    print(f"HELLBOT_SESSION - {e}")
+    print(f"STRING_SESSION - {e}")
     sys.exit()
 
 
