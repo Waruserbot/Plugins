@@ -34,7 +34,7 @@ msg = """{}\n
 @hell_cmd(pattern="alive$")
 async def up(event):
     cid = await client_id(event)
-    ForGo10God, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
+    Xabhish3k, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
     start = datetime.datetime.now()
     hell = await eor(event, "`Building Alive....`")
     uptime = await get_time((time.time() - StartTime))
@@ -50,7 +50,7 @@ async def up(event):
         PIC = "https://telegra.ph/file/9cd450f3d28848ae12026.jpg"
     end = datetime.datetime.now()
     ling = (end - start).microseconds / 1000
-    omk = ALIVE_TEMP.format(ForGo10God, HELL_USER, tel_ver, hell_ver, is_sudo, uptime, ling)
+    omk = ALIVE_TEMP.format(Xabhish3k, HELL_USER, tel_ver, hell_ver, is_sudo, uptime, ling)
     await event.client.send_file(event.chat_id, file=PIC, caption=omk, parse_mode="HTML")
     await hell.delete()
 
