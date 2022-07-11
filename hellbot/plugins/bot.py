@@ -14,14 +14,11 @@ from . import *
 
 ping_txt = """
 <b><i>◦•●◉✿Pong✿◉●•◦</b></i>
-
-    ⚘  <i>sᴘᴇᴇᴅ :</i> <code>{}</code>
-    ⚘  <i>ᴜᴘᴛɪᴍᴇ :</i> <code>{}</code>
-    ⚘  <i>ᴏᴡɴᴇʀ :</i> {}
+    ⏰  <i>sᴘᴇᴇᴅ :</i> <code>{}</code>
+    🏓  <i>ᴜᴘᴛɪᴍᴇ :</i> <code>{}</code>
+    👑  <i>ᴏᴡɴᴇʀ :</i> {}
 """
-
-
-@hell_cmd(pattern="ping$")
+ @hell_cmd(pattern="ping$")
 async def pong(hell):
     start = datetime.datetime.now()
     a = gvarstat("PING_PIC")
