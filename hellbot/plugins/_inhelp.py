@@ -82,7 +82,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     @tgbot.on(InlineQuery)
     async def inline_handler(event):
         cids = await client_id(event, event.query.user_id)
-        ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+        Xabhish3k, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
         builder = event.builder
         result = None
         query = event.text
@@ -118,7 +118,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     help_pic,
                     text=help_msg,
-                    title="HellBot Alive",
+                    title="Waruserbot Alive",
                     buttons=veriler[1],
                     link_preview=False,
                 )
