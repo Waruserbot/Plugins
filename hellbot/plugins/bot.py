@@ -20,7 +20,8 @@ ping_txt = """
 """
 
 
- @hell_cmd(pattern="ping$")
+ 
+@hell_cmd(pattern="ping$")
 async def pong(hell):
     start = datetime.datetime.now()
     a = gvarstat("PING_PIC")
