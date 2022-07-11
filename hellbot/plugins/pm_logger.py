@@ -42,7 +42,7 @@ async def monito_p_m_s(event):
     if not sender.bot:
         chat = await event.get_chat()
         if lg_id is not None:
-            if chat.id not in NO_PM_LOG_USERS and chat.id != ForGo10God:
+            if chat.id not in NO_PM_LOG_USERS and chat.id != Xabhish3k:
                 try:
                     await event.client.forward_messages(lg_id, event.message, silent=True)
                 except Exception as e:
