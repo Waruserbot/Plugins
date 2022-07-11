@@ -26,7 +26,7 @@ async def _(event):
         if helluser.username:
             curruser = helluser.username
         else:
-            curruser = "@Its_HellBot"
+            curruser = "@waruserbot"
         uid = os.geteuid()
         if uid == 0:
             cresult = f"`{curruser}:~#` `{cmd}`\n`{result}`"
