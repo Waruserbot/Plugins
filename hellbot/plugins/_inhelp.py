@@ -297,7 +297,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"reopen")))
     async def reopn(event):
         cids = await client_id(event, event.query.user_id)
-        ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+        Xabhish3k, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
         auth = await clients_list()
         if event.query.user_id in auth:
             current_page_number=0
@@ -320,7 +320,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         cids = await client_id(event, event.query.user_id)
-        ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+        Xabhish3k, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
         auth = await clients_list()
         if event.query.user_id in auth:
             veriler = custom.Button.inline(f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen")
@@ -381,7 +381,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"commands\[(.*)\[(\d*)\]\]\((.*)\)")))
     async def commands(event):
         cids = await client_id(event, event.query.user_id)
-        ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+        Xabhish3k, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
         auth = await clients_list()
         cmd = event.data_match.group(1).decode("UTF-8")
         page = int(event.data_match.group(2).decode("UTF-8"))
@@ -422,4 +422,3 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             return await event.answer("You are not authorized to use me! \n© Waruserbot ™", cache_time=0, alert=True)
 
 
-# hellbot
