@@ -36,8 +36,8 @@ async def on_snip(event):
     global last_triggered_filters_1
     name = event.raw_text
     _id = event.chat_id
-    ForGo10God, _, _ = await client_id(event)
-    if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+    Xabhish3k, _, _ = await client_id(event)
+    if not gvarstat(f"FILTER_{Xabhish3k}_{str(_id)[1:]}"):
         return
     snips = get_all_filters(_id)
     if _id in last_triggered_filters_1:
@@ -81,8 +81,8 @@ if H2:
         global last_triggered_filters_2
         name = event.raw_text
         _id = event.chat_id
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+        Xabhish3k, _, _ = await client_id(event)
+        if not gvarstat(f"FILTER_{Xabhish3k}_{str(_id)[1:]}"):
             return
         snips = get_all_filters(_id)
         if _id in last_triggered_filters_2:
@@ -126,8 +126,8 @@ if H3:
         global last_triggered_filters_3
         name = event.raw_text
         _id = event.chat_id
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+        Xabhish3k, _, _ = await client_id(event)
+        if not gvarstat(f"FILTER_{Xabhish3k}_{str(_id)[1:]}"):
             return
         snips = get_all_filters(_id)
         if _id in last_triggered_filters_3:
@@ -171,8 +171,8 @@ if H4:
         global last_triggered_filters_4
         name = event.raw_text
         _id = event.chat_id
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+        Xabhish3k, _, _ = await client_id(event)
+        if not gvarstat(f"FILTER_{Xabhish3k}_{str(_id)[1:]}"):
             return
         snips = get_all_filters(_id)
         if _id in last_triggered_filters_4:
@@ -216,8 +216,8 @@ if H5:
         global last_triggered_filters_5
         name = event.raw_text
         _id = event.chat_id
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+        Xabhish3k, _, _ = await client_id(event)
+        if not gvarstat(f"FILTER_{Xabhish3k}_{str(_id)[1:]}"):
             return
         snips = get_all_filters(_id)
         if _id in last_triggered_filters_5:
@@ -259,7 +259,7 @@ if H5:
 async def on_snip_save(event):
     name = event.pattern_match.group(1)
     msg = await event.get_reply_message()
-    ForGo10God, _, hell_mention = await client_id(event)
+    Xabhish3k, _, hell_mention = await client_id(event)
     _id = event.chat_id
     if msg:
         snip = {'type': TYPE_TEXT, 'text': msg.message or ''}
@@ -276,7 +276,7 @@ async def on_snip_save(event):
                 snip['hash'] = media.access_hash
                 snip['fr'] = media.file_reference
         add_filter(_id, name, snip['text'], snip['type'], snip.get('id'), snip.get('hash'), snip.get('fr'))
-        addgvar(f"FILTER_{ForGo10God}_{str(_id)[1:]}", "TRUE")
+        addgvar(f"FILTER_{Xabhish3k}_{str(_id)[1:]}", "TRUE")
         await eod(event, f"**Filter Saved!** \n\n__• Client:__ {hell_mention} \n__• Keyword:__ {name}")
     else:
         await eod(event, f"Reply to a message with `{hl}filter keyword` to save the filter")
@@ -284,9 +284,9 @@ async def on_snip_save(event):
 
 @hell_cmd(pattern="filters$")
 async def on_snip_list(event):
-    ForGo10God, _, _ = await client_id(event)
+    Xabhish3k, _, _ = await client_id(event)
     _id = event.chat_id
-    if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+    if not gvarstat(f"FILTER_{Xabhish3k}_{str(_id)[1:]}"):
         return await eod(event, f"No filters. Start saving using `{hl}filter`")
     all_snips = get_all_filters(_id)
     OUT_STR = "**Available Filters in the Current Chat :** \n"
@@ -314,9 +314,9 @@ async def on_snip_list(event):
 @hell_cmd(pattern="stop(?:\s|$)([\s\S]*)")
 async def on_snip_delete(event):
     name = event.pattern_match.group(1)
-    ForGo10God, _, hell_mention = await client_id(event)
+    Xabhish3k, _, hell_mention = await client_id(event)
     _id = event.chat_id
-    if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+    if not gvarstat(f"FILTER_{Xabhish3k}_{str(_id)[1:]}"):
         return await eod(event, "There aren't any filter in chat!")
     try:
         remove_filter(_id, name)
@@ -327,12 +327,12 @@ async def on_snip_delete(event):
 
 @hell_cmd(pattern="rmallfilters$")
 async def on_all_snip_delete(event):
-    ForGo10God, _, _ = await client_id(event)
+    Xabhish3k, _, _ = await client_id(event)
     _id = event.chat_id
-    if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+    if not gvarstat(f"FILTER_{Xabhish3k}_{str(_id)[1:]}"):
         return await eod(event, "No filters in this chat!")
     try:
-        delgvar(f"FILTER_{ForGo10God}_{str(_id)[1:]}")
+        delgvar(f"FILTER_{Xabhish3k}_{str(_id)[1:]}")
         remove_all_filters(_id)
         await eod(event, f"**All the Filters in current chat deleted successfully**")
     except Exception as e:
