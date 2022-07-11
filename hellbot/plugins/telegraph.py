@@ -17,7 +17,7 @@ async def _(event):
     telegraph = Telegraph()
     optional_title = event.text[4:]
     hell = await eor(event, "Making Telegraph Link....")
-    ForGo10God, HELL_USER, hell_mention = await client_id(event)
+    Xabhish3k, HELL_USER, hell_mention = await client_id(event)
     if event.reply_to_msg_id:
         start = datetime.datetime.now()
         r_message = await event.get_reply_message()
