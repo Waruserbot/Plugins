@@ -42,11 +42,11 @@ async def kk(event):
 @hell_cmd(pattern="send ([\s\S]*)")
 async def send(event):
     cids = await client_id(event)
-    ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+    Xabhish3k, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
     message_id = event.reply_to_msg_id or event.message.id
     thumb = hell_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[Legendry Af waruserbot]({chnl_link})** ⚡"
+    omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[⚡️ʟᴇɢᴇɴᴅᴀʀʏ ᴀғ ᴡᴀʀᴜsᴇʀʙᴏᴛ⚡️]({chnl_link})** ⚡"
     the_plugin_file = "./hellbot/plugins/{}.py".format(input_str.lower())
     if os.path.exists(the_plugin_file):
         await event.client.send_file(
@@ -66,7 +66,7 @@ async def send(event):
 @hell_cmd(pattern="install(?:\s|$)([\s\S]*)")
 async def install(event):
     cids = await client_id(event)
-    ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+    Xabhish3k, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
     b = 1
     owo = event.text[9:]
     hell = await eor(event, "__Installing.__")
