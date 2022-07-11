@@ -42,7 +42,7 @@ class Config(object):
     if LOGGER_ID:
         LOGGER_ID = int(LOGGER_ID)
     MAX_MESSAGE_SIZE_LIMIT = 4095
-    MAX_SPAM = int(os.environ.get("MAX_SPAM", 3))
+    MAX_SPAM = int(os.environ.get("MAX_SPAM", 7))
     MY_CHANNEL = os.environ.get("YOUR_CHANNEL", "waruserbot")
     MY_GROUP = os.environ.get("YOUR_GROUP", "waruserbotsupport")
     OCR_API = os.environ.get("OCR_API", None)
