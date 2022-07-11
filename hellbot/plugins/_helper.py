@@ -8,9 +8,9 @@ from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot, BotInl
 from . import *
 
 msg = f"""
-**⚡ Legendary Af waruserbot ⚡**
-  •        [📑 Repo 📑](https://github.com/MeAbhish3k/waruserbot)
-  •        [Waruserbot Support](https://t.me/waruserbotsupport)
+**⚡ ʟᴇɢᴇɴᴅᴀʀʏ ᴀғ ᴡᴀʀᴜsᴇʀʙᴏᴛ ⚡**
+  •        [📑 ʀᴇᴘᴏ 📑](https://github.com/MeAbhish3k/waruserbot)
+  •        [ᴡᴀʀᴜsᴇʀʙᴏᴛ](https://t.me/waruserbot)
   •  ©️ {hell_channel} ™
 """
 botname = Config.BOT_USERNAME
