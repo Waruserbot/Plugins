@@ -18,11 +18,11 @@ botname = Config.BOT_USERNAME
 @hell_cmd(pattern="repo$")
 async def repo(event):
     cids = await client_id(event)
-    ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+    Xabhish3k, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
     try:
         hell = await event.client.inline_query(botname, "repo")
         await hell[0].click(event.chat_id)
-        if event.sender_id == ForGo10God:
+        if event.sender_id == Xabhish3k:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
