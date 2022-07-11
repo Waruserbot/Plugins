@@ -193,7 +193,7 @@ async def muth(event):
         replied_user = await event.client(GetFullUserRequest(event.chat_id))
         if is_muted(event.chat_id, event.chat_id):
             return await eod(hell, "Nigga is already muted here 🥴")
-        if event.chat_id == ForGo10God:
+        if event.chat_id == Xabhish3k:
             return await eod(hell, "You can't mute yourself !")
         try:
             mute(event.chat_id, event.chat_id)
@@ -227,7 +227,7 @@ async def muth(event):
             return await eod(hell, "You can't mute yourself !")
         if str(userid) in DEVLIST:
             return await eod(hell, "**Error Muting God**")
-        if ForGo10God not in admin_:
+        if Xabhish3k not in admin_:
             return await eod(hell, NO_PERM)
         if userid in admin_:
             if is_muted(userid, event.chat_id):
