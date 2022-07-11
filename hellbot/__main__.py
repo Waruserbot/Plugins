@@ -14,7 +14,7 @@ from hellbot.version import __hell__ as hellver
 
 hl = Config.HANDLER
 
-HELL_PIC = "https://telegra.ph/file/44edfd6fa6faaf5284264.jpg"
+WAR_PIC = "https://telegra.ph/file/44edfd6fa6faaf5284264.jpg"
 
 
 # Client Starter
@@ -48,7 +48,7 @@ async def plug_load(path):
 async def hell_is_on(total):
     await update_sudo()
     await logger_check(bot)
-    await start_msg(tbot, HELL_PIC, hellver, total)
+    await start_msg(tbot, WAR_PIC, hellver, total)
     await join_it(bot)
     await join_it(H2)
     await join_it(H3)
@@ -56,7 +56,7 @@ async def hell_is_on(total):
     await join_it(H5)
 
 
-# Hellbot starter...
+# Warbot starter...
 async def start_hellbot():
     try:
         tbot_id = await tbot.get_me()
@@ -70,7 +70,7 @@ async def start_hellbot():
         C5 = await hells(Config.SESSION_5, H5, "SESSION_5")
         await tbot.start()
         total = C1 + C2 + C3 + C4 + C5
-        LOGS.info("••• HellBot Startup Completed •••")
+        LOGS.info("••• WarBot Startup Completed •••")
         LOGS.info("••• Starting to load Plugins •••")
         await plug_load("hellbot/plugins/*.py")
         await plug_channel(bot, Config.PLUGIN_CHANNEL)
