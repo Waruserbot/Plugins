@@ -218,10 +218,10 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id in auth and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚡Legendary Af Waruserbot⚡**",
+                text=f"**⚡ʟᴇɢᴇɴᴅᴀʀʏ ᴀғ ᴡᴀʀᴜsᴇʀʙᴏᴛ⚡️**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://github.com/MeAbhish3k/waruserbot")],
-                    [Button.url("waruserbot", "https://t.me/waruserbot")],
+                    [Button.url("📑 ʀᴇᴘᴏ 📑", "https://github.com/MeAbhish3k/waruserbot")],
+                    [Button.url("ᴡᴀʀᴜsᴇʀʙᴏᴛ", "https://t.me/waruserbot")],
                 ],
             )
 
@@ -240,12 +240,12 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 text="""**Hey! This is [WarUserBot](https://t.me/waruserbot) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/waruserBot"),
-                        custom.Button.url("⚡ GROUP ⚡", "https://t.me/waruserbotsupport"),
+                        custom.Button.url("🔥 ᴄʜᴀɴɴᴇʟ 🔥", "https://t.me/waruserBot"),
+                        custom.Button.url("⚡ ɢʀᴏᴜᴘ ⚡", "https://t.me/waruserbotsupport"),
                     ],
                     [
-                        custom.Button.url("✨ REPO ✨", "https://github.com/MeAbhish3k/waruserbot"),
-                        custom.Button.url("🔰 TUTORIAL 🔰", "https://t.me/waruserbot"),
+                        custom.Button.url("✨ ʀᴇᴘᴏ ✨", "https://github.com/MeAbhish3k/waruserbot"),
+                        custom.Button.url("🔰 ᴛᴜᴛᴏʀɪᴀʟ 🔰", "https://t.me/waruserbot"),
                     ],
                 ],
                 link_preview=False,
@@ -326,7 +326,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             veriler = custom.Button.inline(f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen")
             await event.edit(f"**⚜️ WarUserBot Mêñû Prõvîdêr ìs ñôw Çlösëd ⚜️**\n\n**Bot Of :**  {hell_mention}\n\n        [©️ waruserbot™️]({chnl_link})", buttons=veriler, link_preview=False)
         else:
-            reply_pop_up_alert = "You are not authorized to use me! \n© WarUserBot ™"
+            reply_pop_up_alert = "You are not authorized to use me! \n© @WarUserBot ™"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
    
 
