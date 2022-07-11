@@ -66,11 +66,11 @@ if PM_ON_OFF != "DISABLE":
         if not event.is_private:
             return
         cid = await client_id(event)
-        ForGo10God = cid[0]
+        Xabhish3k = cid[0]
         chat_ids = event.chat_id
         sender = await event.client(GetFullUserRequest(await event.get_input_chat()))
         first_name = sender.user.first_name
-        if chat_ids == ForGo10God:
+        if chat_ids == Xabhish3k:
             return
         if sender.user.bot:
             return
@@ -187,20 +187,20 @@ if PM_ON_OFF != "DISABLE":
         cid = await client_id(event)
         ForGo10God, hell_mention = cid[0], cid[2]
         CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or "**You Have Trespassed To My Master's PM!\nThis Is Illegal And Regarded As Crime.**"
-        HELL_FIRST = "**🔥 Hêllẞø† Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nHello!! Welcome to {}'s PM. This is an automated message.\n\n{}".format(hell_mention, CSTM_PMP)
-        if event.sender_id == ForGo10God:
+        HELL_FIRST = "**🔥 WarUserBot Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nHello!! Welcome to {}'s PM. This is an automated message.\n\n{}".format(hell_mention, CSTM_PMP)
+        if event.sender_id == Xabhish3k:
             return
         if str(event.sender_id) in DEVLIST:
             return
         if Config.LOGGER_ID is None:
-            await event.client.send_message(ForGo10God, "Please Set `LOGGER_ID` For Working Of Pm Permit")
+            await event.client.send_message(Xabhish3k, "Please Set `LOGGER_ID` For Working Of Pm Permit")
             return
         message_text = event.message.raw_text
         chat_ids = event.sender_id
         if HELL_FIRST == message_text:
             return
         sender = await event.client.get_entity(await event.get_input_chat())
-        if chat_ids == ForGo10God:
+        if chat_ids == Xabhish3k:
             return
         if sender.bot:
             return
