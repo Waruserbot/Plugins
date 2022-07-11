@@ -18,6 +18,7 @@ ping_txt = """
     🏓  <i>ᴜᴘᴛɪᴍᴇ :</i> <code>{}</code>
     👑  <i>ᴏᴡɴᴇʀ :</i> {}
 """
+
  @hell_cmd(pattern="ping$")
 async def pong(hell):
     start = datetime.datetime.now()
