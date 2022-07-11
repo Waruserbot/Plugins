@@ -495,7 +495,7 @@ async def _(event):
 async def _(event):
     hel_ = await eor(event, "`Preparing pack kang...`")
     rply = await event.get_reply_message()
-    ForGo10God, HELL_USER, hell_mention = await client_id(event)
+    Xabhish3k, HELL_USER, hell_mention = await client_id(event)
     hell = event.text[7:]
     bot_ = Config.BOT_USERNAME
     bot_un = bot_.replace("@", "")
@@ -535,7 +535,7 @@ async def _(event):
         try:
             create_st = await tbot(
                 functions.stickers.CreateStickerSetRequest(
-                    user_id=ForGo10God,
+                    user_id=Xabhish3k,
                     title=pname,
                     short_name=f"hell_{un_}_V{pack}_by_{bot_un}",
                     stickers=stcrs,
@@ -548,7 +548,7 @@ async def _(event):
             pack = int(pack) + 1
             create_st = await tbot(
                 functions.stickers.CreateStickerSetRequest(
-                    user_id=ForGo10God,
+                    user_id=Xabhish3k,
                     title=pname,
                     short_name=f"hell_{un_}_V{pack}_by_{bot_un}",
                     stickers=stcrs,
