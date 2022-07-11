@@ -223,7 +223,7 @@ async def muth(event):
                 name = (await event.client.get_entity(userid)).first_name
         else:
             return await eod(hell, "I Need a user to mute !!")
-        if userid == ForGo10God:
+        if userid == Xabhish3k:
             return await eod(hell, "You can't mute yourself !")
         if str(userid) in DEVLIST:
             return await eod(hell, "**Error Muting God**")
