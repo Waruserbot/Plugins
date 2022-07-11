@@ -164,7 +164,7 @@ async def _(event):
     hell = await eor(event, f"`Gbanning ...`")
     reason = ""
     cid = await client_id(event)
-    ForGo10God, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
+    Xabhish3k, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
     reply = await event.get_reply_message()
     if event.reply_to_msg_id:
         userid = (await event.get_reply_message()).sender_id
@@ -232,7 +232,7 @@ async def _(event):
 @hell_cmd(pattern="ungban(?:\s|$)([\s\S]*)")
 async def _(event):
     cid = await client_id(event)
-    ForGo10God, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
+    Xabhish3k, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
     hell = await eor(event, "`Ungban in progress...`")
     if event.reply_to_msg_id:
         userid = (await event.get_reply_message()).sender_id
@@ -394,7 +394,7 @@ if H5:
 @hell_cmd(pattern="gkick(?:\s|$)([\s\S]*)")
 async def gkick(event):
     cid = await client_id(event)
-    ForGo10God, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
+    Xabhish3k, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
     hell = await eor(event, f"`Kicking globally ...`")
     reply = await event.get_reply_message()
     if event.reply_to_msg_id:
@@ -407,7 +407,7 @@ async def gkick(event):
         return await eod(hell, "`Reply to some msg or add their id.`")
     name = (await event.client.get_entity(userid)).first_name
     chats = 0
-    if userid == ForGo10God:
+    if userid == Xabhish3k:
         return await eod(hell, "**🥴 Nashe me hai kya lawde!!**")
     if str(userid) in DEVLIST:
         return await eod(hell, "**😪 I'm not going to gkick my developer!!**")
@@ -439,7 +439,7 @@ async def gkick(event):
 @hell_cmd(pattern="gmute(?:\s|$)([\s\S]*)")
 async def gm(event):
     cid = await client_id(event)
-    ForGo10God, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
+    Xabhish3k, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
     hell = await eor(event, "`Trying to gmute user...`")
     if event.reply_to_msg_id:
         userid = (await event.get_reply_message()).sender_id
