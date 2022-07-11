@@ -333,7 +333,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"page\((.+?)\)")))
     async def page(event):
         cids = await client_id(event, event.query.user_id)
-        ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+        Xabhish3k, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
         auth = await clients_list()
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
@@ -354,7 +354,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)")))
     async def Information(event):
         cids = await client_id(event, event.query.user_id)
-        ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+        Xabhish3k, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
         auth = await clients_list()
         page = int(event.data_match.group(1).decode("UTF-8"))
         commands = event.data_match.group(2).decode("UTF-8")
