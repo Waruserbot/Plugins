@@ -37,7 +37,7 @@ async def monito_p_m_s(event):
     if lg_id is None:
         return
     cid = await client_id(event)
-    ForGo10God = cid[0]
+    Xabhish3k = cid[0]
     sender = await event.get_sender()
     if not sender.bot:
         chat = await event.get_chat()
