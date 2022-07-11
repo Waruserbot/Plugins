@@ -17,7 +17,7 @@ async def kk(event):
     if event.reply_to_msg_id:
         reply_to_id = event.reply_to_msg_id
     cids = await client_id(event)
-    ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+    Xabhish3k, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
     cmd = "ls hellbot/plugins"
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
