@@ -186,7 +186,7 @@ async def watcher(event):
 @hell_cmd(pattern="mute(?:\s|$)([\s\S]*)")
 async def muth(event):
     x = await client_id(event)
-    ForGo10God = x[0]
+    Xabhish3k = x[0]
     if event.is_private:
         hell = await eor(event, "**Enough of your bullshit  !!**")
         await event.get_reply_message()
@@ -258,7 +258,7 @@ async def muth(event):
 @hell_cmd(pattern="unmute(?:\s|$)([\s\S]*)")
 async def nomuth(event):
     x = await client_id(event)
-    ForGo10God = x[0]
+    Xabhish3k = x[0]
     if event.is_private:
         hell = await eor(event, "`Unmuting ...`")
         replied_user = await event.client(GetFullUserRequest(event.chat_id))
@@ -292,7 +292,7 @@ async def nomuth(event):
                 name = (await event.client.get_entity(userid)).first_name
         else:
             return await eod(hell, "I need a user to unmute!!")
-        if ForGo10God not in admin_:
+        if Xabhish3k not in admin_:
             return await eod(hell, NO_PERM)
         if userid in admin_:
             if not is_muted(userid, event.chat_id):
