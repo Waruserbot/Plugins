@@ -253,7 +253,7 @@ if Config.INSTANT_BLOCK == "ENABLE":
         sender = await event.client.get_entity(chat_id)
         cid = await client_id(event)
         Xabhish3k = cid[0]
-        if chat_id == ForGo10God:
+        if chat_id == Xabhish3k:
             return
         if str(chat_id) in DEVLIST:
             return
