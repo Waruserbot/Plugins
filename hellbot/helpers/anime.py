@@ -356,7 +356,7 @@ async def get_anilist(qdb, page):
         return [f"No results Found"]
     data = result["data"]["Page"]["media"][0]
     # pylint: disable=possibly-unused-variable
-    chnl = "[†hê Hêllẞø†](https://t.me/Its_Hellbot)"
+    chnl = "[ᴡᴀʀᴜsᴇʀʙᴏᴛ](https://t.me/waruserbot)"
     idm = data.get("id")
     idmal = data.get("idMal")
     romaji = data["title"]["romaji"]
@@ -494,7 +494,7 @@ async def get_manga(qdb, page):
     finals_ += f"**✘ FORMAT :** `{format_}`\n"
     finals_ += f"**✘ SOURCE :** `{source}`\n"
     finals_ += f"**✘ DESCRIPTION :** [Synopsis]({paste})\n\n"
-    finals_ += f"\n       **<\>** [†hê Hêllẞø†](https://t.me/its_hellbot)"
+    finals_ += f"\n       **<\>** [ᴡᴀʀᴜsᴇʀʙᴏᴛ](https://t.me/waruserbot)"
     banner_ = requests.get(banner)
     open(f"{idm}.jpg", "wb").write(banner_.content)
     pic = f"{idm}.jpg"
@@ -514,7 +514,7 @@ async def get_character(query, page):
     img = data["image"]["large"]
     site_url = data["siteUrl"]
     desc = data["description"]
-    logo = "https://telegra.ph/file/2c546060b20dfd7c1ff2d.jpg"
+    logo = "https://telegra.ph/file/e3d6424af33b30b7c82e3.jpg"
     descr = ""
     descr += f"<img src='{img}'/> \n"
     descr += desc
@@ -528,7 +528,7 @@ async def get_character(query, page):
 **✘ DETAILS :** [More Info...]({paste})
 
 
-        **<\>** [†hê Hêllẞø†](https://t.me/its_hellbot)
+        **<\>** [ᴡᴀʀᴜsᴇʀʙᴏᴛ](https://t.me/waruserbot)
 """
     total = result["data"]["Page"]["pageInfo"]["total"]
     return img, [cap_text, total], [id_]
