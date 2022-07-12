@@ -26,7 +26,7 @@ else:
 
 LOGS = getLogger(__name__)
 
-bot = Hell
+bot = warbot
 tbot = WarBot
 
 
