@@ -39,7 +39,7 @@ async def plug_load(path):
             path1 = Path(hell.name)
             shortname = path1.stem
             if shortname.replace(".py", "") in Config.UNLOAD:
-                os.remove(Path(f"hellbot/plugins/{shortname}.py"))
+                os.remove(Path(f"warbot/plugins/{shortname}.py"))
             else:
                 load_module(shortname.replace(".py", ""))      
 
@@ -72,7 +72,7 @@ async def start_hellbot():
         total = C1 + C2 + C3 + C4 + C5
         LOGS.info("••• WarBot Startup Completed •••")
         LOGS.info("••• Starting to load Plugins •••")
-        await plug_load("hellbot/plugins/*.py")
+        await plug_load("warbot/plugins/*.py")
         await plug_channel(bot, Config.PLUGIN_CHANNEL)
         LOGS.info("⚡ Your Waruserbot Is Now Working ⚡")
         LOGS.info("Head to @waruserBot for Updates. Also join @waruserbotsupport chat group to get help regarding to waruserbot.")
