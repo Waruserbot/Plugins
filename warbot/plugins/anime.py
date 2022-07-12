@@ -111,7 +111,7 @@ async def canon(event):
             msg += f'<code>{str(result.get("ac_ep"))}</code>'
         paste = await telegraph_paste(f"📃 Fillers List For “ {i} ”", msg)
         warbot += f"• [{i}]({paste})\n"
-    await nub.edit(hellbot)
+    await nub.edit(warbot)
 
 
 @hell_cmd(pattern="airing(?:\s|$)([\s\S]*)")
