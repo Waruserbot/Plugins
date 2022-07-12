@@ -16,7 +16,7 @@ if okvai == "69":
         print("\nTelethon Session For WarBot")
         APP_ID = int(input("\nEnter APP ID here: "))
         API_HASH = input("\nEnter API HASH here: ")
-        with TelegramClient(StringSession(), APP_ID, API_HASH) as hellbot:
+        with TelegramClient(StringSession(), APP_ID, API_HASH) as warbot:
             print("\nYour WarBot Session Is sent in your Telegram Saved Messages.")
             warbot.send_message("me", f"#WARUSERBOT #WARUSERBOT_SESSION \n\n`{warbot.session.save()}`")
     elif library == "2":
