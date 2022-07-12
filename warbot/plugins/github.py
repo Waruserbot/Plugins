@@ -41,11 +41,11 @@ async def download(event):
         await warbot.edit(
             "Downloaded to `{}` in {} seconds.".format(downloaded_file_name, ms)
         )
-        await hellbot.edit("Committing to Github....")
-        await git_commit(downloaded_file_name, path, branch, hellbot)
+        await warbot.edit("Committing to Github....")
+        await git_commit(downloaded_file_name, path, branch, warbot)
 
 
-async def git_commit(file_name, path, branch, hellbot):
+async def git_commit(file_name, path, branch, warbot):
     content_list = []
     access_token = Config.GITHUB_ACCESS_TOKEN
     g = Github(access_token)
@@ -61,7 +61,7 @@ async def git_commit(file_name, path, branch, hellbot):
     for i in content_list:
         create_file = True
         if i == 'ContentFile(path="' + file_name + '")':
-            return await hellbot.edit("`File Already Exists`")
+            return await warbot.edit("`File Already Exists`")
             create_file = False
     path = path
     file_name = file_name
@@ -80,9 +80,9 @@ async def git_commit(file_name, path, branch, hellbot):
             )
         except:
             print("Cannot Create Plugin")
-            await eod(hellbot, "Cannot Upload File")
+            await eod(warbot, "Cannot Upload File")
     else:
-        return await eod(hellbot, "`Committed Suicide`")
+        return await eod(warbot, "`Committed Suicide`")
 
 
 @hell_cmd(pattern="github(?:\s|$)([\s\S]*)")
