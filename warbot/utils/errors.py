@@ -16,9 +16,9 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from hellbot import *
-from hellbot.helpers import *
-from hellbot.config import Config
+from warbot import *
+from warbot.helpers import *
+from warbot.config import Config
 
 
 # this shit handles errors
@@ -36,7 +36,7 @@ def errors_handler(func):
 
             text = "**WARUSERBOT CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/xabhish3k)"
+            link = "[here](https://t.me/waruserbotsupport)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
