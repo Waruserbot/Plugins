@@ -1,6 +1,6 @@
 from telethon import events
 
-from hellbot.sql import snip_sql as sq
+from warbot.sql import snip_sql as sq
 from . import *
 
 
