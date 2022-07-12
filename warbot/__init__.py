@@ -6,7 +6,7 @@ import time
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
 
-from waebot.clients.session import H2, H3, H4, H5, Hell, HellBot
+from warbot.clients.session import H2, H3, H4, H5, Hell, HellBot
 from warbot.config import Config
 
 
