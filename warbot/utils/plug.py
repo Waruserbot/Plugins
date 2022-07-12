@@ -16,17 +16,17 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator, InputMessagesFilterDocument
 
-from hellbot import *
-from hellbot.clients import *
-from hellbot.helpers import *
-from hellbot.config import *
-from hellbot.utils import *
+from warbot import *
+from warbot.clients import *
+from warbot.helpers import *
+from warbot.config import *
+from warbot.utils import *
 
 
 # ENV
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
-    from hellbot.config import Config
+    from warbot.config import Config
 else:
     if os.path.exists("Config.py"):
         from Config import Development as Config
@@ -39,17 +39,17 @@ def load_module(shortname):
     elif shortname.endswith("_"):
         import hellbot.utils
 
-        path = Path(f"hellbot/plugins/{shortname}.py")
-        name = "hellbot.plugins.{}".format(shortname)
+        path = Path(f"warbot/plugins/{shortname}.py")
+        name = "warbot.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("HellBot - Successfully imported " + shortname)
+        LOGS.info("WarBot - Successfully imported " + shortname)
     else:
-        import hellbot.utils
+        import warbot.utils
 
-        path = Path(f"hellbot/plugins/{shortname}.py")
-        name = "hellbot.plugins.{}".format(shortname)
+        path = Path(f"warbot/plugins/{shortname}.py")
+        name = "warbot.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = Hell
@@ -59,15 +59,15 @@ def load_module(shortname):
         mod.H4 = H4
         mod.H5 = H5
         mod.Hell = Hell
-        mod.HellBot = HellBot
-        mod.tbot = HellBot
+        mod.WarBot = WarBot
+        mod.tbot = WarBot
         mod.tgbot = bot.tgbot
         mod.command = command
         mod.CmdHelp = CmdHelp
         mod.client_id = client_id
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = hellbot.utils
+        sys.modules["uniborg.util"] = warbot.utils
         mod.Config = Config
         mod.borg = bot
         mod.hellbot = bot
@@ -80,13 +80,13 @@ def load_module(shortname):
         mod.hell_cmd = hell_cmd
         mod.sudo_cmd = sudo_cmd
         # support for other userbots
-        sys.modules["userbot.utils"] = hellbot.utils
-        sys.modules["userbot"] = hellbot
+        sys.modules["userbot.utils"] = warbot.utils
+        sys.modules["userbot"] = warbot
         # support for paperplaneextended
-        sys.modules["userbot.events"] = hellbot
+        sys.modules["userbot.events"] = warbot
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["hellbot.plugins." + shortname] = mod
+        sys.modules["warbot.plugins." + shortname] = mod
         LOGS.info("⚡ WarUserBot ⚡ - Successfully Imported " + shortname)
 
 
@@ -99,7 +99,7 @@ def remove_plugin(shortname):
             del LOAD_PLUG[shortname]
 
         except BaseException:
-            name = f"hellbot.plugins.{shortname}"
+            name = f"warbot.plugins.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
                 ev, cb = bot._event_builders[i]
@@ -118,11 +118,11 @@ async def plug_channel(client, channel):
         for plugins in range(total):
             plug_id = plugs[plugins].id
             plug_name = plugs[plugins].file.name
-            if os.path.exists(f"hellbot/plugins/{plug_name}"):
+            if os.path.exists(f"warbot/plugins/{plug_name}"):
                 return
             downloaded_file_name = await client.download_media(
                 await client.get_messages(channel, ids=plug_id),
-                "hellbot/plugins/",
+                "warbot/plugins/",
             )
             path1 = Path(downloaded_file_name)
             shortname = path1.stem
@@ -132,4 +132,4 @@ async def plug_channel(client, channel):
                 LOGS.error(str(e))
 
 
-# hellbot
+# warbot
