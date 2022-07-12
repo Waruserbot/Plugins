@@ -16,7 +16,7 @@ from telethon.tl.functions.messages import GetStickerSetRequest
 from telethon.tl.types import DocumentAttributeFilename, DocumentAttributeSticker, InputStickerSetID, MessageMediaPhoto, InputMessagesFilterDocument
 from telethon.utils import get_input_document
 
-from hellbot.sql.gvar_sql import addgvar, gvarstat
+from warbot.sql.gvar_sql import addgvar, gvarstat
 from . import *
 
 KANGING_STR = [
@@ -42,7 +42,7 @@ async def kang(event):
     un = f"@{user.username}" if user.username else HELL_USER
     un_ = user.username if user.username else Xabhish3k 
     message = await event.get_reply_message()
-    hellbot = gvarstat("STICKER_PACKNAME")
+    warbot = gvarstat("STICKER_PACKNAME")
     photo = None
     emojibypass = False
     is_anim = False
