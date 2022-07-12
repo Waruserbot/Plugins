@@ -33,12 +33,12 @@ async def download(event):
             reply_message.media, GIT_TEMP_DIR
         )
     except Exception as e:
-        await eod(hellbot, str(e))
+        await eod(warbot, str(e))
     else:
         end = datetime.datetime.now()
         ms = (end - start).seconds
         await event.delete()
-        await hellbot.edit(
+        await warbot.edit(
             "Downloaded to `{}` in {} seconds.".format(downloaded_file_name, ms)
         )
         await hellbot.edit("Committing to Github....")
