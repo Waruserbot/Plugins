@@ -1,21 +1,21 @@
 import datetime
 import time
 
-from hellbot import *
-from hellbot.clients import *
-from hellbot.config import Config
-from hellbot.helpers import *
-from hellbot.utils import *
-from hellbot.random_strings import *
-from hellbot.version import __hell__
-from hellbot.sql.gvar_sql import gvarstat
+from warbot import *
+from warbot.clients import *
+from warbot.config import Config
+from warbot.helpers import *
+from warbot.utils import *
+from warbot.random_strings import *
+from warbot.version import __hell__
+from warbot.sql.gvar_sql import gvarstat
 from telethon import version
 
-hell_logo = "./hellbot/resources/pics/hellbot_logo.jpg"
-cjb = "./hellbot/resources/pics/cjb.jpg"
-restlo = "./hellbot/resources/pics/rest.jpeg"
-shuru = "./hellbot/resources/pics/shuru.jpg"
-shhh = "./hellbot/resources/pics/chup_madarchod.jpeg"
+hell_logo = "./warbot/resources/pics/hellbot_logo.jpg"
+cjb = "./warbot/resources/pics/cjb.jpg"
+restlo = "./warbot/resources/pics/rest.jpeg"
+shuru = "./warbot/resources/pics/shuru.jpg"
+shhh = "./warbot/resources/pics/chup_madarchod.jpeg"
 hl = Config.HANDLER
 shl = Config.SUDO_HANDLER
 hell_ver = __hell__
