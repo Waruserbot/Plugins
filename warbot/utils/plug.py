@@ -37,7 +37,7 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import hellbot.utils
+        import warbot.utils
 
         path = Path(f"warbot/plugins/{shortname}.py")
         name = "warbot.plugins.{}".format(shortname)
