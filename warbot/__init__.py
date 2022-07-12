@@ -6,7 +6,7 @@ import time
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
 
-from warbot.clients.session import H2, H3, H4, H5, Hell, HellBot
+from warbot.clients.session import H2, H3, H4, H5, Hell, WarBot
 from warbot.config import Config
 
 
@@ -27,7 +27,7 @@ else:
 LOGS = getLogger(__name__)
 
 bot = Hell
-tbot = Hellbot
+tbot = Warbot
 
 
 if not Config.API_HASH:
