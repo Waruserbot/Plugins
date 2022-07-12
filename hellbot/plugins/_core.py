@@ -170,7 +170,7 @@ CmdHelp("core").add_command(
 ).add_command(
   "cmds", None, "Gives out the list of modules in HellBot."
 ).add_command(
-  "repo", None, "Gives HellBot's Github repo link."
+  "repo", None, "Gives Waruserbot's Github repo link."
 ).add_command(
   "help", None, "Shows inline help menu."
 ).add_command(
