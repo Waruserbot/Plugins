@@ -27,7 +27,7 @@ else:
 LOGS = getLogger(__name__)
 
 bot = Hell
-tbot = Warbot
+tbot = WarBot
 
 
 if not Config.API_HASH:
