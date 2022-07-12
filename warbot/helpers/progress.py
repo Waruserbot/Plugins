@@ -16,10 +16,10 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from hellbot import *
-from hellbot.config import Config
-from hellbot.helpers import *
-from hellbot.utils import *
+from warbot import *
+from warbot.config import Config
+from warbot.helpers import *
+from warbot.utils import *
 
 async def reply_id(event):
     reply_to_id = None
@@ -111,4 +111,4 @@ def time_formatter(milliseconds: int) -> str:
     )
     return tmp[:-2]
 
-# hellbot
+# warbot
