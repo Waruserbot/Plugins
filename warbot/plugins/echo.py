@@ -5,8 +5,8 @@ import requests
 from telethon import events
 from telethon.utils import get_peer_id
 
-from hellbot.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
-from hellbot.sql.gvar_sql import addgvar, gvarstat, delgvar
+from warbot.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
+from warbot.sql.gvar_sql import addgvar, gvarstat, delgvar
 from . import *
 
 
