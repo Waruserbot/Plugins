@@ -18,7 +18,7 @@ async def kk(event):
         reply_to_id = event.reply_to_msg_id
     cids = await client_id(event)
     Xabhish3k, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
-    cmd = "ls hellbot/plugins"
+    cmd = "ls warbot/plugins"
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
     )
@@ -74,7 +74,7 @@ async def install(event):
         try:
             downloaded_file_name = await event.client.download_media(  # pylint:disable=E0602
                 await event.get_reply_message(),
-                "./hellbot/plugins/"  # pylint:disable=E0602
+                "./warbot/plugins/"  # pylint:disable=E0602
             )
             if owo != "-f":
                 op = open(downloaded_file_name, "r")
@@ -119,7 +119,7 @@ async def uninstall(event):
     if ".py" in shortname:
         shortname = shortname.replace(".py", "")
     hell = await eor(event, f"__Trying to uninstall plugin__ `{shortname}` ...")
-    dir_path =f"./hellbot/plugins/{shortname}.py"
+    dir_path =f"./warbot/plugins/{shortname}.py"
     try:
         remove_plugin(shortname)
         os.remove(dir_path)
