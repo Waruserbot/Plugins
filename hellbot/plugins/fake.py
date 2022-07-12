@@ -15,15 +15,15 @@ async def _(event):
     response = requests.get(url)
     hell = await eor(event, "`Creating a fake face...`")
     if response.status_code == 200:
-      with open("HELLBOT.jpg", 'wb') as f:
+      with open("WARBOT.jpg", 'wb') as f:
         f.write(response.content)
     else:
         return await eod(hell, "Failed to create Fake Face! Try again later.")
     captin = f"Fake Image By {hell_mention}"
-    fole = "HELLBOT.jpg"
+    fole = "WARBOT.jpg"
     await event.client.send_file(event.chat_id, fole, caption=captin, force_document=False)
     await hell.delete()
-    os.system("rm /root/hellbot/HELLBOT.jpg ")
+    os.system("rm /root/hellbot/WARBOT.jpg ")
 
 
 @hell_cmd(pattern="fake ([\s\S]*)")
@@ -55,7 +55,7 @@ async def gbun(event):
         firstname = replied_user.user.first_name
         usname = replied_user.user.username
         idd = reply_message.sender_id
-        if idd == 1432756163:
+        if idd == 1891078417:
             await hell.edit("`Wait a second, This is my master!`\n**How dare you threaten to ban my master nigger!**\n\n__Your account has been hacked! Pay 69$ to my master__ [Abhishek](https://t.me/Xabhish3k) __to release your account__😏", link_preview=False)
         else:
             jnl = (
