@@ -6,8 +6,8 @@ import time
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
 
-from hellbot.clients.session import H2, H3, H4, H5, Hell, HellBot
-from hellbot.config import Config
+from waebot.clients.session import H2, H3, H4, H5, Hell, HellBot
+from warbot.config import Config
 
 
 StartTime = time.time()
