@@ -9,10 +9,10 @@ from pathlib import Path
 from telethon import TelegramClient, events
 from telethon.errors import MessageIdInvalidError, MessageNotModifiedError
 
-from hellbot import LOGS, bot, tbot
-from hellbot.clients import H2, H3, H4, H5
-from hellbot.config import Config
-from hellbot.helpers import *
+from warbot import LOGS, bot, tbot
+from warbot.clients import H2, H3, H4, H5
+from warbot.config import Config
+from warbot.helpers import *
 
 
 # admin cmd or normal user cmd
@@ -313,4 +313,4 @@ def command(**args):
 
     return decorator
 
-# hellbot
+# warbot
