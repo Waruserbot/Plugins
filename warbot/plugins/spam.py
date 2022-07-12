@@ -68,7 +68,7 @@ async def _(event):
 
 
 # Special Break Spam Module For HellBot Made By Chirag Bhargava.
-# Team HellBot
+# Team WarBot
 @hell_cmd(pattern="bspam(?:\s|$)([\s\S]*)")
 async def spammer(event):
     lg_id = Config.LOGGER_ID
