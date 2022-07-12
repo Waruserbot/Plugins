@@ -14,8 +14,8 @@ async def _(event):
     try:
         hell = event.pattern_match.group(1)
         await hel_.edit("__Searching for__ `{}`".format(hell))
-        # Credits to catuserbot.
-        # Ported to Hellbot and beautifications by @ForGo10God.
+        # Credits to .
+        # Ported to warbot and beautifications by .
         movies = imdb.search_movie(hell)
         movieid = movies[0].movieID
         movie = imdb.get_movie(movieid)
