@@ -2,10 +2,10 @@ from telethon import Button
 from telethon.tl import functions
 from telethon.tl.types import ChatAdminRights
 
-from hellbot import LOGS
-from hellbot.config import Config
-from hellbot.helpers.int_str import make_int
-from hellbot.sql.gvar_sql import addgvar, gvarstat
+from warbot import LOGS
+from warbot.config import Config
+from warbot.helpers.int_str import make_int
+from warbot.sql.gvar_sql import addgvar, gvarstat
 
 
 # Creates the logger group on first deploy and adds the helper bot
@@ -83,4 +83,4 @@ async def join_it(client):
         except BaseException:
             pass
 
-# hellbot
+# warbot
