@@ -10,7 +10,7 @@ neko_category = ['feet', 'yuri', 'trap', 'futanari', 'hololewd', 'lewdkemo', 'so
 async def _(event):
     x = await event.get_chat()
     y = x.id
-    if y == 1496036895:
+    if y == 1891078417:
         return await eor(event, "Can't use this command here.")
     if Config.ABUSE != "ON":
         return await eor(event, "**This command is only for users with variable** `ABUSE` **as** `ON`")
