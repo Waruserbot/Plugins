@@ -14,8 +14,8 @@ from . import *
 
 ping_txt = """
 <b><i>◦•●◉✿Pong✿◉●•◦</b></i>
-    ⏰  <i>sᴘᴇᴇᴅ :</i> <code>{}</code>
-    🏓  <i>ᴜᴘᴛɪᴍᴇ :</i> <code>{}</code>
+    🏓  <i>sᴘᴇᴇᴅ :</i> <code>{}</code>
+    ⏰  <i>ᴜᴘᴛɪᴍᴇ :</i> <code>{}</code>
     👑  <i>ᴏᴡɴᴇʀ :</i> {}
 """
 
