@@ -5,9 +5,9 @@ from pathlib import Path
 from telethon import events
 
 from .session import H2, H3, H4, H5
-from hellbot import CMD_LIST, LOAD_PLUG, bot
-from hellbot.config import Config
-from hellbot.sql.gvar_sql import gvarstat
+from warbot import CMD_LIST, LOAD_PLUG, bot
+from warbot.config import Config
+from warbot.sql.gvar_sql import gvarstat
 
 
 def hell_cmd(
