@@ -82,7 +82,7 @@ else:
     H5 = None
 
 
-HellBot = TelegramClient(
+WarBot = TelegramClient(
     session="War-TBot",
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
