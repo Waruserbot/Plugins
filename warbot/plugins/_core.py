@@ -47,7 +47,7 @@ async def send(event):
     thumb = hell_logo
     input_str = event.pattern_match.group(1)
     omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[⚡️ʟᴇɢᴇɴᴅᴀʀʏ ᴀғ ᴡᴀʀᴜsᴇʀʙᴏᴛ⚡️]({chnl_link})** ⚡"
-    the_plugin_file = "./hellbot/plugins/{}.py".format(input_str.lower())
+    the_plugin_file = "./warbot/plugins/{}.py".format(input_str.lower())
     if os.path.exists(the_plugin_file):
         await event.client.send_file(
             event.chat_id,
@@ -168,7 +168,7 @@ CmdHelp("core").add_command(
 ).add_command(
   "send", "<file name>", "Sends the given file from your userbot server, if any.", "send alive"
 ).add_command(
-  "cmds", None, "Gives out the list of modules in HellBot."
+  "cmds", None, "Gives out the list of modules in WarBot."
 ).add_command(
   "repo", None, "Gives Waruserbot's Github repo link."
 ).add_command(
