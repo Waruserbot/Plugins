@@ -2,7 +2,7 @@ import re
 
 from telethon import events
 
-from hellbot.sql import blacklist_sql as sq
+from warbot.sql import blacklist_sql as sq
 from . import *
 
 
