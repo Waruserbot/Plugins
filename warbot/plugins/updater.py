@@ -91,7 +91,7 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     await eor(event, "✅ Successfully updated WarUserBot!\n\nBot is restarting please wait for a minute.")
-    args = [sys.executable, "-m", "hellbot"]
+    args = [sys.executable, "-m", "warbot"]
     os.execle(sys.executable, *args, os.environ)
     return
 
