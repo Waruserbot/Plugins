@@ -222,9 +222,9 @@ CmdHelp("execmod").add_command(
 ).add_command(
   "date", None, "Shows current date and time"
 ).add_command(
-  "env", None, "Shows Environment veriables of your HellBot"
+  "env", None, "Shows Environment veriables of your WarBot"
 ).add_command(
-  "speed", None, "Shows server speed of your HellBot"
+  "speed", None, "Shows server speed of your WarBot"
 ).add_info(
   "Exec Modules."
 ).add_warning(
