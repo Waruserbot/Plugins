@@ -21,7 +21,7 @@ async def download(event):
     splt = txts.split("|")
     path = splt[0]
     branch = splt[1] or "master"
-    hellbot = await eor(event, "Processing ...")
+    warbot = await eor(event, "Processing ...")
     if not os.path.isdir(GIT_TEMP_DIR):
         os.makedirs(GIT_TEMP_DIR)
     start = datetime.datetime.now()
