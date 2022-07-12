@@ -29,7 +29,7 @@ requirements_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname
 
 
 async def war_info(warbot_info):
-    infos = requests.get(hellbot_info).json()
+    infos = requests.get(warbot_info).json()
     _version = infos['WARBOT-INFO']['version']
     _release = infos['WARBOT-INFO']['release-date']
     _branch = infos['WARBOT-INFO']['branch']
@@ -145,7 +145,7 @@ async def upstream(event):
     cid = await client_id(event)
     hell_mention = cid[2]
     if changelog == "" and not force_update:
-        _version, _release, _branch, _author, _auturl = await war_info(hellbot_info)
+        _version, _release, _branch, _author, _auturl = await war_info(warbot_info)
         output_ = f"**Your Bot Version :** `{hell_ver}` \n**Owner :** {hell_mention} \n\n**Official WarUserBot Version :** `{_version}` \n**Release Date :** `{_release}` \n**Official Repo Branch :** `{_branch}` \n**Update By :** [{_author}]({_auturl})"
         if str(_version) not in str(hell_ver):
             output_ += f"\n\n**Do** `{hl}update build` **to update your WarUserBot to latest version.**"
