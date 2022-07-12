@@ -2,7 +2,7 @@ FROM teamvaders/warbot:latest
 
 RUN git clone https://github.com/waruserbot/Plugins.git /root/warbot
 
-WORKDIR /root/hellbot
+WORKDIR /root/warbot
 
 RUN pip3 install -U -r requirements.txt
 
