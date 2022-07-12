@@ -30,4 +30,4 @@ class Development(Config):
 
 
 # end of required config
-# hellbot
+# warbot
