@@ -535,7 +535,7 @@ async def _(event):
         try:
             create_st = await tbot(
                 functions.stickers.CreateStickerSetRequest(
-                    user_id=ForGo10God,
+                    user_id= Xabhish3k,
                     title=pname,
                     short_name=f"hell_{un_}_V{pack}_by_{bot_un}",
                     stickers=stcrs,
@@ -548,7 +548,7 @@ async def _(event):
             pack = int(pack) + 1
             create_st = await tbot(
                 functions.stickers.CreateStickerSetRequest(
-                    user_id=ForGo10God,
+                    user_id= Xabhish3k,
                     title=pname,
                     short_name=f"hell_{un_}_V{pack}_by_{bot_un}",
                     stickers=stcrs,
