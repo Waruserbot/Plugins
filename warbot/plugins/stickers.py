@@ -40,7 +40,7 @@ async def kang(event):
     user = await event.client.get_me()
     Xabhish3k, HELL_USER, hell_mention = await client_id(event)
     un = f"@{user.username}" if user.username else HELL_USER
-    un_ = user.username if user.username else  Xabhish3k
+    un_ = user.username if user.username else Xabhish3k 
     message = await event.get_reply_message()
     warbot = gvarstat("STICKER_PACKNAME")
     photo = None
@@ -113,8 +113,8 @@ async def kang(event):
                 pack = 1
                 emoji = splat[1]
 
-        packname = f"Warbot_{un_}_{pack}"
-        packnick = f"{warbot}" if warbot else f"{un}'s waruserbot Vol.{pack}"
+        packname = f"waruserbot_{un_}_{pack}"
+        packnick = f"{warbot}" if warbot else f"{un}'s WarUserBot Vol.{pack}"
         cmd = "/newpack"
         file = io.BytesIO()
 
@@ -147,8 +147,8 @@ async def kang(event):
                     x = await conv.get_response()
                     while "120" in x.text:
                         pack += 1
-                        packname = f"WARBOT_{un_}_{pack}"
-                        packnick = f"{warbot}" if warbot else f"{un}'s waruserbot Vol.{pack}"
+                        packname = f"waruserbot_{un_}_{pack}"
+                        packnick = f"{warbot}" if warbot else f"{un}'s WarUserBot Vol.{pack}"
                         cmd = "/newpack"
                         await hell.edit(f"`Switching to Pack {str(pack)} due to insufficient space`")
                         await conv.send_message(packname)
@@ -191,7 +191,7 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 if is_anim:
-                    packname = f"Warbot_{un_}_{pack}_anim"
+                    packname = f"waruserbot_{un_}_{pack}_anim"
                     packnick = f"{warbot}" if warbot else f"{un}'s waruserbot Vol.{pack} (Animated)"
                     cmd = "/newanimated"
                     await conv.send_message("/addsticker")
@@ -244,8 +244,8 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 elif is_vid:
-                    packname = f"Warbot_{un_}_{pack}_vid"
-                    packnick = f"{warbot}" if warbot else f"{un}'s Waruserbot (Video)"
+                    packname = f"waruserbot_{un_}_{pack}_vid"
+                    packnick = f"{warbot}" if warbot else f"{un}'s waruserbot (Video)"
                     cmd = "/newvideo"
                     await conv.send_message("/addsticker")
                     await conv.get_response()
@@ -272,8 +272,8 @@ async def kang(event):
             await hell.edit("`Preparing a new pack....`")
             async with event.client.conversation("Stickers") as conv:
                 if not is_anim and not is_vid:
-                    packname = f"Warbot_{un_}_{pack}"
-                    packnick = f"{Warbot}" if Warbot else f"{un}'s Waruserbot Vol.{pack}"
+                    packname = f"waruserbot_{un_}_{pack}"
+                    packnick = f"{warbot}" if warbot else f"{un}'s waruserbot Vol.{pack}"
                     cmd = "/newpack"
                     await conv.send_message(cmd)
                     await conv.get_response()
@@ -300,8 +300,8 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
             
                 if is_anim:
-                    packname = f"Warbot_{un_}_{pack}_anim"
-                    packnick = f"{warbot}" if warbot else f"{un}'s waruserbot Vol.{pack} (Animated)"
+                    packname = f"waruserbot_{un_}_{pack}_anim"
+                    packnick = f"{warbot}" if warbot else f"{un}'s WarUserBot Vol.{pack} (Animated)"
                     cmd = "/newanimated"
                     await conv.send_message(cmd)
                     await conv.get_response()
@@ -331,8 +331,8 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 if is_vid:
-                    packname = f"Warbot_{un_}_{pack}_vid"
-                    packnick = f"{warbot}" if warbot else f"{un}'s waruserbot (Video)"
+                    packname = f"waruserbot_{un_}_{pack}_vid"
+                    packnick = f"{warbot}" if warbot else f"{un}'s WarUserBot (Video)"
                     cmd = "/newvideo"
                     await conv.send_message(cmd)
                     await conv.get_response()
@@ -495,17 +495,17 @@ async def _(event):
 async def _(event):
     hel_ = await eor(event, "`Preparing pack kang...`")
     rply = await event.get_reply_message()
-     Xabhish3k, HELL_USER, hell_mention = await client_id(event)
+    Xabhish3k, HELL_USER, hell_mention = await client_id(event)
     hell = event.text[7:]
     bot_ = Config.BOT_USERNAME
     bot_un = bot_.replace("@", "")
     user = await event.client.get_me()
     un = f"@{user.username}" if user.username else user.first_name
-    un_ = user.username if user.username else  Xabhish3k
+    un_ = user.username if user.username else Xabhish3k 
     if not rply:
         return await eod(hel_, "`Reply to a stciker to kang that pack.`")
     if hell == "":
-        pname = f"{un}'s waruserbot Pack"
+        pname = f"{un}'s @stickersbag Pack"
     else:
         pname = hell
     if rply and rply.media and rply.media.document.mime_type == "image/webp":
@@ -535,7 +535,7 @@ async def _(event):
         try:
             create_st = await tbot(
                 functions.stickers.CreateStickerSetRequest(
-                    user_id= Xabhish3k,
+                    user_id=Xabhish3k,
                     title=pname,
                     short_name=f"hell_{un_}_V{pack}_by_{bot_un}",
                     stickers=stcrs,
@@ -548,7 +548,7 @@ async def _(event):
             pack = int(pack) + 1
             create_st = await tbot(
                 functions.stickers.CreateStickerSetRequest(
-                    user_id= Xabhish3k,
+                    user_id=Xabhish3k,
                     title=pname,
                     short_name=f"hell_{un_}_V{pack}_by_{bot_un}",
                     stickers=stcrs,
@@ -594,7 +594,7 @@ async def sticklet(event):
     )
 
     image_stream = io.BytesIO()
-    image_stream.name = "Warbot.webp"
+    image_stream.name = "WarUserBot.webp"
     image.save(image_stream, "WebP")
     image_stream.seek(0)
 
