@@ -192,7 +192,7 @@ async def kang(event):
 
                 if is_anim:
                     packname = f"Warbot_{un_}_{pack}_anim"
-                    packnick = f"{warbot}" if warbot else f"{un}'s Hêllẞø† Vol.{pack} (Animated)"
+                    packnick = f"{warbot}" if warbot else f"{un}'s waruserbot Vol.{pack} (Animated)"
                     cmd = "/newanimated"
                     await conv.send_message("/addsticker")
                     await conv.get_response()
@@ -505,7 +505,7 @@ async def _(event):
     if not rply:
         return await eod(hel_, "`Reply to a stciker to kang that pack.`")
     if hell == "":
-        pname = f"{un}'s Hêllẞø† Pack"
+        pname = f"{un}'s waruserbot Pack"
     else:
         pname = hell
     if rply and rply.media and rply.media.document.mime_type == "image/webp":
