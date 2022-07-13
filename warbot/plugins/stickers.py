@@ -113,7 +113,7 @@ async def kang(event):
                 pack = 1
                 emoji = splat[1]
 
-        packname = f"waruserbot_{un_}_{pack}"
+        packname = f"Warbot_{un_}_{pack}"
         packnick = f"{warbot}" if warbot else f"{un}'s WarUserBot Vol.{pack}"
         cmd = "/newpack"
         file = io.BytesIO()
@@ -147,7 +147,7 @@ async def kang(event):
                     x = await conv.get_response()
                     while "120" in x.text:
                         pack += 1
-                        packname = f"waruserbot_{un_}_{pack}"
+                        packname = f"Warbot_{un_}_{pack}"
                         packnick = f"{warbot}" if warbot else f"{un}'s WarUserBot Vol.{pack}"
                         cmd = "/newpack"
                         await hell.edit(f"`Switching to Pack {str(pack)} due to insufficient space`")
@@ -191,7 +191,7 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 if is_anim:
-                    packname = f"waruserbot_{un_}_{pack}_anim"
+                    packname = f"Warbot_{un_}_{pack}_anim"
                     packnick = f"{warbot}" if warbot else f"{un}'s waruserbot Vol.{pack} (Animated)"
                     cmd = "/newanimated"
                     await conv.send_message("/addsticker")
@@ -244,7 +244,7 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 elif is_vid:
-                    packname = f"waruserbot_{un_}_{pack}_vid"
+                    packname = f"Warbot_{un_}_{pack}_vid"
                     packnick = f"{warbot}" if warbot else f"{un}'s waruserbot (Video)"
                     cmd = "/newvideo"
                     await conv.send_message("/addsticker")
@@ -300,7 +300,7 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
             
                 if is_anim:
-                    packname = f"waruserbot_{un_}_{pack}_anim"
+                    packname = f"Warbot_{un_}_{pack}_anim"
                     packnick = f"{warbot}" if warbot else f"{un}'s WarUserBot Vol.{pack} (Animated)"
                     cmd = "/newanimated"
                     await conv.send_message(cmd)
@@ -331,7 +331,7 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 if is_vid:
-                    packname = f"waruserbot_{un_}_{pack}_vid"
+                    packname = f"Warbot_{un_}_{pack}_vid"
                     packnick = f"{warbot}" if warbot else f"{un}'s WarUserBot (Video)"
                     cmd = "/newvideo"
                     await conv.send_message(cmd)
@@ -594,7 +594,7 @@ async def sticklet(event):
     )
 
     image_stream = io.BytesIO()
-    image_stream.name = "WarUserBot.webp"
+    image_stream.name = "WarBot.webp"
     image.save(image_stream, "WebP")
     image_stream.seek(0)
 
