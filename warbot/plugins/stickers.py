@@ -594,7 +594,7 @@ async def sticklet(event):
     )
 
     image_stream = io.BytesIO()
-    image_stream.name = "WarBot.webp"
+    image_stream.name = "Warbot.webp"
     image.save(image_stream, "WebP")
     image_stream.seek(0)
 
