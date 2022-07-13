@@ -272,7 +272,7 @@ async def kang(event):
             await hell.edit("`Preparing a new pack....`")
             async with event.client.conversation("Stickers") as conv:
                 if not is_anim and not is_vid:
-                    packname = f"waruserbot_{un_}_{pack}"
+                    packname = f"Warbot_{un_}_{pack}"
                     packnick = f"{warbot}" if warbot else f"{un}'s waruserbot Vol.{pack}"
                     cmd = "/newpack"
                     await conv.send_message(cmd)
