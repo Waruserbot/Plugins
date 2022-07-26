@@ -216,7 +216,7 @@ async def _(event):
     if reason != "":
         ogmsg += f"\n**🔰 Reason :**  `{reason}`"
     if Config.ABUSE == "ON":
-        await event.client.send_file(event.chat_id, caption=gmsg)
+        
         await hell.delete()
     else:
         await hell.edit(ogmsg)
