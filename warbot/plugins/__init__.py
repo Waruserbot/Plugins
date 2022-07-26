@@ -12,10 +12,10 @@ from warbot.sql.gvar_sql import gvarstat
 from telethon import version
 
 hell_logo = "./warbot/resources/pics/hellbot_logo.jpg"
-cjb = "./warbot/resources/pics/cjb.jpg"
+
 restlo = "./warbot/resources/pics/rest.jpeg"
 shuru = "./warbot/resources/pics/shuru.jpg"
-shhh = "./warbot/resources/pics/chup_madarchod.jpeg"
+
 hl = Config.HANDLER
 shl = Config.SUDO_HANDLER
 hell_ver = __hell__
