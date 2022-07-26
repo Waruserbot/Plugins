@@ -216,7 +216,7 @@ async def _(event):
     if reason != "":
         ogmsg += f"\n**🔰 Reason :**  `{reason}`"
     if Config.ABUSE == "ON":
-        await event.client.send_file(event.chat_id, gbpic, caption=gmsg)
+        await event.client.send_file(event.chat_id, caption=gmsg)
         await hell.delete()
     else:
         await hell.edit(ogmsg)
@@ -415,7 +415,7 @@ async def gkick(event):
     
     gkmsg = f"🏃 **Globally Kicked** [{name}](tg://user?id={userid})'s butts !! \n\n📝 **Chats :**  `{chats}`"
     if Config.ABUSE == "ON":
-        await event.client.send_file(event.chat_id, gbpic, caption=gkmsg, reply_to=reply)
+        await event.client.send_file(event.chat_id, caption=gkmsg, reply_to=reply)
         await hell.delete()
     else:
         await hell.edit(gkmsg)
