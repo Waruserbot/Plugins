@@ -21,7 +21,7 @@ async def _(event):
     cid = await client_id(event)
     hell_mention = cid[2]
     start = datetime.datetime.now()
-    fnt = await get_font_file(event.client, "@HELL_FRONTS")
+    fnt = await get_font_file(event.client, "@fontsbin")
     if event.reply_to_msg_id:
         rply = await event.get_reply_message()
         try:
@@ -30,7 +30,7 @@ async def _(event):
             pass
     else:
         await hell.edit("Picked a Logo BG...")
-        async for i in event.client.iter_messages("@HELLBOT_LOGOS", filter=InputMessagesFilterPhotos):
+        async for i in event.client.iter_messages("@bgbin", filter=InputMessagesFilterPhotos):
             PICS_STR.append(i)
         pic = random.choice(PICS_STR)
         logo_ = await pic.download_media()
